@@ -55,6 +55,19 @@ nav:hover {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+.save-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgb(211, 211, 211);
+}
+
+.save-icon i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
 .socials {
   padding-bottom: 30px;
 }
@@ -87,7 +100,7 @@ nav:hover {
 }
 
 .bi-patch-check {
-  color: rgb(43, 43, 255);
+  color: rgb(24, 129, 193);
 }
 .profile p {
   font-size: 0.8rem;
@@ -125,7 +138,7 @@ a {
 .tile {
   width: 70%;
   background-color: rgb(37, 37, 37);
-  margin: 5px;
+  margin: 10px;
   padding: 8px;
   border-radius: 17px;
   display: flex;
@@ -172,10 +185,76 @@ footer > p {
   margin-top: 5rem;
 }
 
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00b4d8;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-btn i {
+  font-size: 24px;
+}
+
+.floating-btn:hover {
+  background-color: #0077b6;
+  transform: scale(1.1);
+}
+
+.network-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.network-btn {
+  background-color: #00b4d8;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.network-btn i {
+  font-size: 24px;
+}
+
+.network-btn:hover {
+  background-color: #0077b6;
+  transform: scale(1.1);
+}
+
 /* Media Queries */
 
 /* Mobile devices */
 @media only screen and (max-width: 600px) {
+  .floating-btn {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .floating-btn i {
+    font-size: 20px;
+  }
+
   .glass {
     margin: 0 8%;
   }
@@ -202,7 +281,72 @@ footer > p {
   .icon-link {
     padding: 0 9px;
   }
+
+  .save-icon {
+    top: 5px;
+    right: 5px;
+    color: rgb(211, 211, 211);
+  }
+
+  .save-icon i {
+    font-size: 20px;
+  }
+
+  .network-btn-container {
+    margin-top: 10px;
+  }
+
+  .network-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .network-btn i {
+    font-size: 20px;
+  }
 }
+
+
+/* Smaller Mobile Styles */
+@media (max-width: 480px) {
+  .profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tiles .tile {
+    padding: 6px;
+    margin: 6px 0;
+  }
+
+  .cards .card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .floating-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .floating-btn i {
+    font-size: 18px;
+  }
+
+  .network-btn-container {
+    margin-top: 5px;
+  }
+
+  .network-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .network-btn i {
+    font-size: 18px;
+  }
+}
+
 
 /* Ipad Portrait and Landscape */
 
